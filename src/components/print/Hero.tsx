@@ -50,9 +50,9 @@ const Hero = () => {
         </div>
 
         <div className="relative lg:col-span-5">
-          <div className="relative h-[420px] w-full md:h-[520px]">
+          <div className="relative h-[420px] w-full md:h-[520px] lg:-mr-8 xl:-mr-16">
             <div className="absolute inset-0 rounded-[3rem] bg-gradient-paper shadow-press paper-grain" />
-            <div className="absolute inset-0">
+            <div className="absolute inset-0 overflow-visible">
               <HeroScene />
             </div>
             {/* Floating label chips */}

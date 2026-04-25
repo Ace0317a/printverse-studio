@@ -42,7 +42,7 @@ const HeroScene = () => {
     <Canvas
       shadows
       dpr={[1, 2]}
-      camera={{ position: [0, 0, 7], fov: 45 }}
+      camera={{ position: [0, 0, 9], fov: 50 }}
       gl={{ antialias: true, alpha: true }}
     >
       <Suspense fallback={null}>
@@ -50,12 +50,12 @@ const HeroScene = () => {
         <directionalLight position={[5, 5, 5]} intensity={1.2} castShadow />
         <directionalLight position={[-5, -2, 3]} intensity={0.4} color="#ff3ea5" />
 
-        <InkBlob position={[-2.2, 0.6, 0]} color="#11c8ed" speed={1.1} />
-        <InkBlob position={[2.4, -0.4, -0.5]} color="#ee2db0" speed={0.9} />
-        <InkBlob position={[0.2, 1.6, -1]} color="#fcd029" speed={1.3} />
+        <InkBlob position={[-1.8, 0.5, 0]} color="#11c8ed" speed={1.1} />
+        <InkBlob position={[1.9, -0.3, -0.5]} color="#ee2db0" speed={0.9} />
+        <InkBlob position={[0.1, 1.4, -1]} color="#fcd029" speed={1.3} />
 
-        <PaperSheet position={[-1.5, -1.6, 0.5]} rotation={[0, 0, 0.25]} color="#ffffff" />
-        <PaperSheet position={[1.6, -1.7, 0.2]} rotation={[0, 0, -0.2]} color="#fcd029" />
+        <PaperSheet position={[-1.2, -1.5, 0.5]} rotation={[0, 0, 0.25]} color="#ffffff" />
+        <PaperSheet position={[1.3, -1.6, 0.2]} rotation={[0, 0, -0.2]} color="#fcd029" />
 
         <ContactShadows position={[0, -2.4, 0]} opacity={0.35} scale={12} blur={2.4} far={3} />
         <Environment preset="studio" />
